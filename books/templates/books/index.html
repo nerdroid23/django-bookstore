@@ -1,0 +1,16 @@
+{% extends 'books/layouts/app.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="grid grid-cols-4 gap-9">
+        {% for book in books %}
+            <div class="space-y-4 justify-self-center">
+                <div class="h-96">
+                    <img class="h-full" src="{% static book.imageLink %}" alt="{{ book.title }}">
+                </div>
+                <p>{{ book.title }} - {{ book.author }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

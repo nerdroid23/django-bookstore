@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django - BookStore</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="py-5 border-b border-gray-200">
+        <h3 class="text-3xl leading-6 font-medium text-gray-900">
+            Welcome to our bookstore!
+        </h3>
+        <p class="mt-2 max-w-4xl text-sm text-gray-500">Here is a listing of our books.</p>
+    </div>
+
+
+    <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
+    <div class="max-w-6xl mx-auto pb-16">
+        <!-- Content goes here -->
+        {% block content %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>
